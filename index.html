@@ -23,7 +23,7 @@
   --red: #ff1744;
   --blue: #2979ff;
 }
-
+ 
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 html, body { height: 100%; overflow: hidden; touch-action: pan-y; }
 body {
@@ -34,7 +34,7 @@ body {
   overscroll-behavior: none;
 }
 ::-webkit-scrollbar { display: none; }
-
+ 
 .screen {
   position: fixed; inset: 0;
   display: flex; flex-direction: column;
@@ -43,14 +43,14 @@ body {
 }
 .screen.hidden { opacity: 0; pointer-events: none; transform: translateX(40px); }
 .screen.slide-out { transform: translateX(-40px); opacity: 0; }
-
+ 
 /* ===== SCREEN 1: HOME ===== */
 #screen-home {
   background: var(--dark);
   align-items: center; justify-content: space-between;
   padding: calc(env(safe-area-inset-top) + 20px) 24px calc(env(safe-area-inset-bottom) + 24px);
 }
-
+ 
 .logo-section { text-align: center; padding-top: 12px; }
 .logo-badge {
   display: inline-flex; align-items: center; gap: 6px;
@@ -62,7 +62,7 @@ body {
 }
 .logo-badge span { font-family: 'Barlow Condensed'; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--orange); }
 .logo-emoji { font-size: 13px; }
-
+ 
 .logo-title {
   font-family: 'Barlow Condensed'; font-size: 42px; font-weight: 900;
   letter-spacing: 2px; text-transform: uppercase; line-height: 0.95;
@@ -76,7 +76,7 @@ body {
   margin-bottom: 4px;
 }
 .logo-subtitle { font-size: 12px; color: var(--muted); font-weight: 500; }
-
+ 
 /* Spectrum bar home */
 .spectrum-preview {
   width: 100%;
@@ -111,7 +111,7 @@ body {
   to { left: 70%; }
 }
 .spectrum-tagline { font-size: 11px; color: var(--muted); text-align: center; font-weight: 500; }
-
+ 
 /* Upload zone */
 .upload-zone {
   width: 100%;
@@ -144,7 +144,7 @@ body {
   letter-spacing: 1px; color: var(--muted); text-transform: uppercase;
 }
 #file-input { display: none; }
-
+ 
 /* Preview */
 .preview-container { width: 100%; position: relative; }
 .preview-img {
@@ -160,7 +160,7 @@ body {
   font-family: 'Barlow Condensed'; font-size: 13px; font-weight: 700;
   color: var(--muted); cursor: pointer; letter-spacing: 0.5px;
 }
-
+ 
 .btn-primary {
   width: 100%;
   background: linear-gradient(135deg, #ff6d00, #ff9f1c);
@@ -177,26 +177,26 @@ body {
   opacity: 0.4; animation: none; cursor: default;
 }
 .btn-primary:not(:disabled):active { transform: scale(0.97); }
-
+ 
 @keyframes pulse {
   0%   { box-shadow: 0 6px 24px rgba(255,109,0,0.4), 0 0 0 0 rgba(255,109,0,0.5); }
   70%  { box-shadow: 0 6px 24px rgba(255,109,0,0.4), 0 0 0 20px rgba(255,109,0,0); }
   100% { box-shadow: 0 6px 24px rgba(255,109,0,0.4), 0 0 0 0 rgba(255,109,0,0); }
 }
-
+ 
 /* Disclaimer */
 .disclaimer {
   font-size: 10px; color: rgba(255,255,255,0.25); text-align: center;
   font-weight: 500; line-height: 1.5; padding: 0 10px;
 }
-
+ 
 /* ===== SCREEN 2: LOADING ===== */
 #screen-loading {
   background: var(--dark);
   align-items: center; justify-content: center; gap: 24px;
   padding: 40px 24px;
 }
-
+ 
 .loading-image-container {
   position: relative; width: 180px; height: 180px;
 }
@@ -224,7 +224,7 @@ body {
 .loading-corner.tr { top: -2px; right: -2px; border-top-width: 2px; border-right-width: 2px; border-radius: 0 4px 0 0; }
 .loading-corner.bl { bottom: -2px; left: -2px; border-bottom-width: 2px; border-left-width: 2px; border-radius: 0 0 0 4px; }
 .loading-corner.br { bottom: -2px; right: -2px; border-bottom-width: 2px; border-right-width: 2px; border-radius: 0 0 4px 0; }
-
+ 
 .loading-title {
   font-family: 'Barlow Condensed'; font-size: 26px; font-weight: 900;
   letter-spacing: 1px; text-transform: uppercase; text-align: center;
@@ -244,7 +244,7 @@ body {
 .loading-step.active .step-text { color: var(--text); }
 .loading-step.done .step-text { color: var(--green); }
 .step-status { margin-left: auto; font-size: 14px; }
-
+ 
 .loading-progress {
   width: 100%; height: 4px;
   background: var(--card);
@@ -257,7 +257,7 @@ body {
   transition: width 0.5s ease;
   width: 0%;
 }
-
+ 
 /* ===== SCREEN 3: RESULTS ===== */
 #screen-results {
   background: radial-gradient(ellipse at top, #1a1a3e 0%, #0a0a0f 70%);
@@ -265,7 +265,7 @@ body {
   padding: calc(env(safe-area-inset-top) + 16px) 20px calc(env(safe-area-inset-bottom) + 24px);
   gap: 16px;
 }
-
+ 
 .results-header {
   text-align: center;
   padding: 8px 0 4px;
@@ -279,7 +279,7 @@ body {
   font-family: 'Barlow Condensed'; font-size: 32px; font-weight: 900;
   letter-spacing: 2px; text-transform: uppercase; line-height: 1;
 }
-
+ 
 /* Big score */
 .score-card {
   background: var(--card);
@@ -309,7 +309,7 @@ body {
   font-family: 'Barlow Condensed'; font-size: 20px; font-weight: 900;
   color: var(--muted);
 }
-
+ 
 /* Spectrum slider */
 .spectrum-slider-section { position: relative; z-index: 1; margin-top: 16px; padding: 0 2px; }
 .spectrum-slider-bar {
@@ -330,14 +330,14 @@ body {
   font-family: 'Barlow Condensed'; font-size: 12px; font-weight: 800;
   letter-spacing: 1px; text-transform: uppercase;
 }
-
+ 
 /* Breakdown cards */
 .section-label {
   font-family: 'Barlow Condensed'; font-size: 11px; font-weight: 700;
   letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted);
   margin-bottom: 8px;
 }
-
+ 
 .breakdown-list { display: flex; flex-direction: column; gap: 8px; }
 .breakdown-item {
   background: var(--card); border-radius: 14px; padding: 12px 14px;
@@ -366,7 +366,7 @@ body {
   font-family: 'Barlow Condensed'; font-size: 13px; font-weight: 700;
   letter-spacing: 0.5px;
 }
-
+ 
 /* Donut chart */
 .chart-card {
   background: var(--card); border-radius: 20px; padding: 18px;
@@ -379,7 +379,7 @@ body {
 .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 .legend-text { font-size: 12px; font-weight: 500; color: var(--muted); flex: 1; }
 .legend-pct { font-family: 'Barlow Condensed'; font-size: 14px; font-weight: 800; }
-
+ 
 /* Analysis card */
 .analysis-card {
   background: var(--card);
@@ -393,7 +393,7 @@ body {
   margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
 }
 .analysis-text { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.85); font-weight: 400; }
-
+ 
 /* Detected markers */
 .markers-card {
   background: var(--card); border-radius: 20px; padding: 16px;
@@ -408,7 +408,7 @@ body {
 .marker-tag.left { background: rgba(255,23,68,0.15); border: 1px solid rgba(255,23,68,0.3); color: #ff6b7a; }
 .marker-tag.right { background: rgba(41,121,255,0.15); border: 1px solid rgba(41,121,255,0.3); color: #6fa4ff; }
 .marker-tag.neutral { background: var(--card2); border: 1px solid var(--border); color: var(--muted); }
-
+ 
 /* CTA */
 .btn-secondary {
   width: 100%; background: transparent;
@@ -418,7 +418,7 @@ body {
   text-transform: uppercase; transition: all 0.2s ease;
 }
 .btn-secondary:active { background: var(--card3); }
-
+ 
 /* ===== OVERLAY ERROR ===== */
 #overlay-error {
   position: fixed; inset: 0; z-index: 100;
@@ -445,7 +445,7 @@ body {
   letter-spacing: 1px; text-transform: uppercase; cursor: pointer;
   border-top: 1px solid rgba(255,255,255,0.07); color: var(--orange);
 }
-
+ 
 /* Share button */
 .share-row { display: flex; gap: 10px; }
 .share-row .btn-secondary { flex: 1; font-size: 15px; }
@@ -456,18 +456,18 @@ body {
   font-weight: 700; padding: 16px; cursor: pointer; letter-spacing: 1px;
   text-transform: uppercase; transition: all 0.2s ease;
 }
-
+ 
 .results-footer {
   font-size: 10px; color: rgba(255,255,255,0.2); text-align: center;
   font-weight: 500; line-height: 1.5; padding: 0 10px 8px;
 }
-
+ 
 /* Confetti dot */
 .confetti { position: fixed; pointer-events: none; z-index: 50; }
 </style>
 </head>
 <body>
-
+ 
 <!-- SCREEN 0: PASSWORD -->
 <div class="screen" id="screen-password">
   <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding: 40px 28px; gap: 28px;">
@@ -491,7 +491,7 @@ body {
     </button>
   </div>
 </div>
-
+ 
 <!-- SCREEN 0b: API KEY -->
 <div class="screen hidden" id="screen-apikey">
   <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding: 32px 24px; gap: 22px;">
@@ -500,7 +500,7 @@ body {
       <div style="font-family:'Barlow Condensed'; font-size:28px; font-weight:900; letter-spacing:2px; text-transform:uppercase; color:var(--text); margin-bottom:6px;">Clé API Anthropic</div>
       <div style="font-size:13px; color:var(--muted); font-weight:500; line-height:1.6;">L'IA qui analyse tes photos a besoin<br>d'une clé API Anthropic gratuite.</div>
     </div>
-
+ 
     <div style="width:100%; background:var(--card); border-radius:16px; padding:16px; border:1px solid var(--border); border-left: 3px solid var(--cyan);">
       <div style="font-family:'Barlow Condensed'; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--cyan); margin-bottom:10px;">📋 Comment obtenir ta clé (2 min)</div>
       <div style="display:flex; flex-direction:column; gap:8px;">
@@ -518,13 +518,13 @@ body {
         </div>
       </div>
     </div>
-
+ 
     <a href="https://console.anthropic.com/settings/keys" target="_blank" style="width:100%; display:block; text-decoration:none;">
       <div style="width:100%; background:linear-gradient(135deg,rgba(0,229,255,0.15),rgba(0,229,255,0.05)); border:1.5px solid rgba(0,229,255,0.4); border-radius:14px; padding:16px; text-align:center; font-family:'Barlow Condensed'; font-size:18px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--cyan);">
         🔗 Obtenir ma clé Anthropic
       </div>
     </a>
-
+ 
     <div style="width:100%; display:flex; flex-direction:column; gap:8px;">
       <input
         id="apikey-input"
@@ -535,17 +535,17 @@ body {
       >
       <div id="apikey-error" style="text-align:center; font-size:12px; color:#ff4d4d; font-weight:600; min-height:16px; opacity:0; transition:opacity 0.2s;"></div>
     </div>
-
+ 
     <button id="btn-apikey" class="btn-primary" style="width:100%;">
       Valider la clé 🚀
     </button>
-
+ 
     <div style="font-size:10px; color:rgba(255,255,255,0.2); text-align:center; line-height:1.5;">
       Ta clé est stockée localement sur ton appareil uniquement.<br>Elle n'est jamais partagée ni envoyée ailleurs.
     </div>
   </div>
 </div>
-
+ 
 <!-- SCREEN 1: HOME -->
 <div class="screen" id="screen-home">
   <div class="logo-section">
@@ -553,7 +553,7 @@ body {
     <div class="logo-vs">L'IA qui te range dans une case</div>
     <div class="logo-subtitle">Basé sur 100% de clichés assumés ✨</div>
   </div>
-
+ 
   <div class="spectrum-preview">
     <div class="spectrum-labels">
       <span class="spectrum-label-left">🔴 GAUCHE</span>
@@ -564,12 +564,13 @@ body {
     </div>
     <div class="spectrum-tagline">Où vas-tu tomber sur le spectre politique ?</div>
   </div>
-
+ 
   <div class="upload-zone" id="upload-zone">
     <input type="file" id="file-input" accept="image/*">
     <span class="upload-icon">📸</span>
     <div class="upload-title">Ajoute ta photo</div>
     <div class="upload-hint">Selfie, portrait, outfit du jour… l'IA analyse tout</div>
+    <div class="upload-hint" style="font-size:11px; margin-top:4px; color:rgba(255,255,255,0.3);">📋 Ou colle une image directement (Ctrl+V)</div>
     <div class="upload-formats">
       <span class="upload-format">JPG</span>
       <span class="upload-format">PNG</span>
@@ -577,17 +578,17 @@ body {
       <span class="upload-format">WEBP</span>
     </div>
   </div>
-
+ 
   <div class="preview-container" id="preview-container" style="display:none;">
     <img id="preview-img" class="preview-img" alt="Preview">
     <div class="preview-change" id="preview-change">✏️ Changer</div>
   </div>
-
+ 
   <button class="btn-primary" id="btn-analyze" disabled>
     🔍 Analyser maintenant
   </button>
 </div>
-
+ 
 <!-- SCREEN 2: LOADING -->
 <div class="screen hidden" id="screen-loading">
   <div class="loading-image-container" id="loading-img-container">
@@ -628,14 +629,14 @@ body {
   </div>
   <div class="loading-progress"><div class="loading-progress-bar" id="progress-bar"></div></div>
 </div>
-
+ 
 <!-- SCREEN 3: RESULTS -->
 <div class="screen hidden" id="screen-results">
   <div class="results-header">
     <div class="results-logo">🎭 DE GAUCHE OU DE DROITE ?</div>
     <div class="results-verdict" id="results-verdict">VERDICT</div>
   </div>
-
+ 
   <!-- Big scores -->
   <div class="score-card">
     <div class="scores-row">
@@ -659,13 +660,13 @@ body {
       </div>
     </div>
   </div>
-
+ 
   <!-- Breakdown -->
   <div>
     <div class="section-label">📊 Détail par catégorie</div>
     <div class="breakdown-list" id="breakdown-list"></div>
   </div>
-
+ 
   <!-- Donut chart -->
   <div class="chart-card">
     <div class="section-label">🥧 Répartition des marqueurs</div>
@@ -674,27 +675,27 @@ body {
       <div class="chart-legend" id="chart-legend"></div>
     </div>
   </div>
-
+ 
   <!-- Analysis -->
   <div class="analysis-card">
     <div class="analysis-title">🔎 Pourquoi ce résultat ?</div>
     <div class="analysis-text" id="analysis-text">Chargement…</div>
   </div>
-
+ 
   <!-- Detected markers -->
   <div class="markers-card">
     <div class="section-label">🏷️ Marqueurs détectés</div>
     <div class="markers-list" id="markers-list"></div>
   </div>
-
+ 
   <!-- Actions -->
   <div class="share-row">
     <button class="btn-secondary" id="btn-retry">🔄 Recommencer</button>
     <button class="btn-share" id="btn-share">📤 Partager</button>
   </div>
-
+ 
 </div>
-
+ 
 <!-- ERROR OVERLAY -->
 <div id="overlay-error">
   <div class="error-sheet">
@@ -707,7 +708,7 @@ body {
     <button class="error-btn" id="error-close">OK, j'ai compris</button>
   </div>
 </div>
-
+ 
 <script>
 // ===== DOM REFS =====
 const screenPassword = document.getElementById('screen-password');
@@ -726,21 +727,21 @@ const btnShare = document.getElementById('btn-share');
 const overlayError = document.getElementById('overlay-error');
 const errorClose = document.getElementById('error-close');
 const progressBar = document.getElementById('progress-bar');
-
+ 
 // ===== STATE =====
 let selectedFile = null;
 let selectedImageBase64 = null;
 let analysisResult = null;
-
+ 
 // ===== PASSWORD =====
 const CORRECT_PWD = 'gossederiche';
 const pwdInput = document.getElementById('pwd-input');
 const btnPwd = document.getElementById('btn-pwd');
 const pwdError = document.getElementById('pwd-error');
-
+ 
 // Start on password screen
 screenHome.classList.add('hidden');
-
+ 
 function checkPassword() {
   if (pwdInput.value.trim().toLowerCase() === CORRECT_PWD) {
     // Check if key already saved
@@ -762,18 +763,18 @@ btnPwd.addEventListener('click', checkPassword);
 pwdInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkPassword(); });
 pwdInput.addEventListener('focus', () => { pwdInput.style.borderColor = 'var(--orange)'; });
 pwdInput.addEventListener('blur', () => { pwdInput.style.borderColor = 'var(--border)'; });
-
+ 
 // ===== API KEY =====
 let ANTHROPIC_KEY = localStorage.getItem('anthropic_key') || '';
 const apikeyInput = document.getElementById('apikey-input');
 const btnApikey = document.getElementById('btn-apikey');
 const apikeyError = document.getElementById('apikey-error');
-
+ 
 if (apikeyInput) {
   apikeyInput.addEventListener('focus', () => { apikeyInput.style.borderColor = 'var(--orange)'; });
   apikeyInput.addEventListener('blur',  () => { apikeyInput.style.borderColor = 'var(--border)'; });
 }
-
+ 
 function validateApiKey() {
   const val = apikeyInput.value.trim();
   if (!val.startsWith('sk-ant-')) {
@@ -789,7 +790,7 @@ function validateApiKey() {
 }
 if (btnApikey) btnApikey.addEventListener('click', validateApiKey);
 if (apikeyInput) apikeyInput.addEventListener('keydown', e => { if(e.key==='Enter') validateApiKey(); });
-
+ 
 // ===== NAVIGATION =====
 function showScreen(id) {
   [screenPassword, screenApiKey, screenHome, screenLoading, screenResults].forEach(s => {
@@ -797,11 +798,23 @@ function showScreen(id) {
     else { s.classList.add('hidden'); }
   });
 }
-
+ 
 // ===== FILE HANDLING =====
 uploadZone.addEventListener('click', () => fileInput.click());
 previewChange.addEventListener('click', (e) => { e.stopPropagation(); fileInput.click(); });
-
+ 
+// Paste from clipboard (Ctrl+V or mobile paste)
+document.addEventListener('paste', (e) => {
+  const items = e.clipboardData?.items;
+  if (!items) return;
+  for (const item of items) {
+    if (item.type.startsWith('image/')) {
+      const file = item.getAsFile();
+      if (file) { handleFile(file); break; }
+    }
+  }
+});
+ 
 uploadZone.addEventListener('dragover', (e) => { e.preventDefault(); uploadZone.classList.add('dragover'); });
 uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
 uploadZone.addEventListener('drop', (e) => {
@@ -809,11 +822,11 @@ uploadZone.addEventListener('drop', (e) => {
   const file = e.dataTransfer.files[0];
   if (file && file.type.startsWith('image/')) handleFile(file);
 });
-
+ 
 fileInput.addEventListener('change', () => {
   if (fileInput.files[0]) handleFile(fileInput.files[0]);
 });
-
+ 
 function handleFile(file) {
   selectedFile = file;
   const reader = new FileReader();
@@ -827,19 +840,19 @@ function handleFile(file) {
   };
   reader.readAsDataURL(file);
 }
-
+ 
 // ===== ANALYZE =====
 btnAnalyze.addEventListener('click', startAnalysis);
-
+ 
 async function startAnalysis() {
   if (!selectedImageBase64) return;
-
+ 
   // Setup loading screen
   document.getElementById('loading-img').src = previewImg.src;
   showScreen('screen-loading');
   resetLoadingSteps();
   animateLoadingSteps();
-
+ 
   try {
     const result = await callClaudeAPI(selectedImageBase64, selectedFile?.type || 'image/jpeg');
     // Let the loading animation finish dramatically
@@ -853,7 +866,7 @@ async function startAnalysis() {
     showScreen('screen-home');
   }
 }
-
+ 
 // ===== LOADING ANIMATION =====
 function resetLoadingSteps() {
   document.querySelectorAll('.loading-step').forEach((s, i) => {
@@ -863,7 +876,7 @@ function resetLoadingSteps() {
   });
   progressBar.style.width = '0%';
 }
-
+ 
 function animateLoadingSteps() {
   const steps = document.querySelectorAll('.loading-step');
   const delays = [0, 1600, 3200, 4800, 6400];
@@ -882,14 +895,14 @@ function animateLoadingSteps() {
   });
   setTimeout(() => { progressBar.style.width = '100%'; }, 7800);
 }
-
+ 
 // ===== ANALYSE IA — Anthropic Claude Haiku (le plus léger) =====
 async function callClaudeAPI(imageBase64, mediaType) {
   if (!ANTHROPIC_KEY) throw new Error('Clé API manquante');
   const mime = mediaType || 'image/jpeg';
-
+ 
   const systemPrompt = `Tu es un analyseur politique satirique et humoristique. Tu analyses des images pour déterminer un score "Gauche vs Droite" basé UNIQUEMENT sur des stéréotypes culturels, vestimentaires et sociétaux IRONIQUES et AMUSANTS. Purement humoristique, sans opinion politique réelle.
-
+ 
 PARAMÈTRES D'ANALYSE (pondérés) :
 - Vêtements (30%) : friperie/vintage/couleurs vives = Gauche ; luxe/créateur/preppy/sobre = Droite
 - Coiffure (20%) : mulet/couleurs/alternatif/bun bohème = Gauche ; classique/soigné/peigné = Droite
@@ -897,10 +910,10 @@ PARAMÈTRES D'ANALYSE (pondérés) :
 - Environnement (10%) : plantes/livres/bohème/coloré = Gauche ; minimaliste haut de gamme/blanc/bureau = Droite
 - Accessoires (10%) : pins/badges/bijoux artisanaux/lunettes rondes = Gauche ; montre de luxe/cravate/cuir = Droite
 - Divers (15%) : autres marqueurs culturels visuels
-
+ 
 Marqueurs GAUCHE clés : mulet, piercing septum, vêtements Patagonia/friperie, tote bag, foulard palestinien, Birkenstock, velours côtelé, couleurs vives, plantes, livres, badges syndicaux, coupe undercut, cheveux colorés, ambiance bohème, lumière naturelle
 Marqueurs DROITE clés : blazer tweed, col OCBD, polo Ralph Lauren, montre Rolex/IWC, chino beige, mocassins, cachemire, coupe Ivy League, fond blanc/épuré, Haussmann, mallette cuir, style très soigné, couleurs neutres
-
+ 
 Retourne UNIQUEMENT ce JSON exact (sans markdown, sans backticks) :
 {
   "gauche": 65,
@@ -921,10 +934,10 @@ Retourne UNIQUEMENT ce JSON exact (sans markdown, sans backticks) :
     {"label":"Marqueur détecté 3","side":"right"}
   ]
 }
-
+ 
 Verdicts : gauche>80%="GAUCHISTE ULTIME", 65-80%="BOBO RADICAL", 55-65%="LÉGÈREMENT À GAUCHE", 45-55%="LE CENTRISTE PAUMÉ", 35-45%="DROITE ASSUMÉE", 20-35%="BOURGEOIS CLASSIQUE", <20%="RÉAC DE COMPÉT'"
 N'analyse JAMAIS les traits du visage ou l'ethnicité. Focus : vêtements, style, coiffure, accessoires, décor.`;
-
+ 
   const resp = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -943,7 +956,7 @@ N'analyse JAMAIS les traits du visage ou l'ethnicité. Focus : vêtements, style
       ]}]
     })
   });
-
+ 
   if (!resp.ok) {
     const err = await resp.json().catch(()=>({}));
     const msg = err.error?.message || '';
@@ -954,7 +967,7 @@ N'analyse JAMAIS les traits du visage ou l'ethnicité. Focus : vêtements, style
     }
     throw new Error(msg || `Erreur API (${resp.status})`);
   }
-
+ 
   const data = await resp.json();
   const raw = data.content?.find(b => b.type === 'text')?.text || '';
   try {
@@ -965,12 +978,12 @@ N'analyse JAMAIS les traits du visage ou l'ethnicité. Focus : vêtements, style
     throw new Error('Réponse IA invalide. Réessaie !');
   }
 }
-
+ 
 function loadImage(src) {
   return new Promise((res,rej)=>{ const i=new Image(); i.onload=()=>res(i); i.onerror=rej; i.src=src; });
 }
-
-
+ 
+ 
 // ===== RENDER RESULTS =====
 function renderResults(r) {
   // Verdict
@@ -983,11 +996,11 @@ function renderResults(r) {
   } else {
     verdictEl.style.color = 'var(--orange)';
   }
-
+ 
   // Scores (will animate)
   document.getElementById('score-left').textContent = '0%';
   document.getElementById('score-right').textContent = '0%';
-
+ 
   // Breakdown
   const breakdownList = document.getElementById('breakdown-list');
   breakdownList.innerHTML = '';
@@ -1011,13 +1024,13 @@ function renderResults(r) {
         </div>
       </div>`;
   });
-
+ 
   // Donut chart
   drawDonut(r.breakdown || []);
-
+ 
   // Analysis
   document.getElementById('analysis-text').textContent = r.analysis || '';
-
+ 
   // Markers
   const markersList = document.getElementById('markers-list');
   markersList.innerHTML = '';
@@ -1025,21 +1038,21 @@ function renderResults(r) {
     markersList.innerHTML += `<span class="marker-tag ${m.side === 'left' ? 'left' : m.side === 'right' ? 'right' : 'neutral'}">${m.label}</span>`;
   });
 }
-
+ 
 function animateResults() {
   const r = analysisResult;
   if (!r) return;
-
+ 
   // Animate scores
   animateCount(document.getElementById('score-left'), 0, r.gauche, 1000, '%');
   animateCount(document.getElementById('score-right'), 0, r.droite, 1000, '%');
-
+ 
   // Spectrum dot
   const dotPos = (r.droite / 100) * 100; // 0% = all left, 100% = all right
   setTimeout(() => {
     document.getElementById('spectrum-dot').style.left = `${Math.max(5, Math.min(95, dotPos))}%`;
   }, 200);
-
+ 
   // Bars
   setTimeout(() => {
     document.querySelectorAll('.breakdown-bar-fill').forEach(el => {
@@ -1047,7 +1060,7 @@ function animateResults() {
     });
   }, 300);
 }
-
+ 
 function animateCount(el, from, to, duration, suffix) {
   const start = performance.now();
   function step(now) {
@@ -1058,37 +1071,37 @@ function animateCount(el, from, to, duration, suffix) {
   }
   requestAnimationFrame(step);
 }
-
+ 
 // ===== DONUT CHART =====
 const DONUT_COLORS = ['#ff6d00', '#00e5ff', '#00e676', '#aa1aff', '#ffd600', '#ff4d4d'];
-
+ 
 function drawDonut(breakdown) {
   const canvas = document.getElementById('donut-canvas');
   const ctx = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height;
   ctx.clearRect(0, 0, W, H);
-
+ 
   const cx = W / 2, cy = H / 2, R = 52, r = 30;
   const total = breakdown.reduce((s, b) => s + b.weight, 0);
   let angle = -Math.PI / 2;
-
+ 
   // Build legend
   const legend = document.getElementById('chart-legend');
   legend.innerHTML = '';
-
+ 
   breakdown.forEach((item, i) => {
     const slice = (item.weight / total) * 2 * Math.PI;
     const color = DONUT_COLORS[i % DONUT_COLORS.length];
-
+ 
     ctx.beginPath();
     ctx.moveTo(cx, cy);
     ctx.arc(cx, cy, R, angle, angle + slice);
     ctx.closePath();
     ctx.fillStyle = color;
     ctx.fill();
-
+ 
     angle += slice;
-
+ 
     legend.innerHTML += `
       <div class="legend-item">
         <div class="legend-dot" style="background:${color}"></div>
@@ -1096,13 +1109,13 @@ function drawDonut(breakdown) {
         <div class="legend-pct" style="color:${color}">${item.weight}%</div>
       </div>`;
   });
-
+ 
   // Hole
   ctx.beginPath();
   ctx.arc(cx, cy, r, 0, 2 * Math.PI);
   ctx.fillStyle = '#13131f';
   ctx.fill();
-
+ 
   // Center text
   ctx.fillStyle = 'rgba(255,255,255,0.4)';
   ctx.font = '700 10px Barlow';
@@ -1111,7 +1124,7 @@ function drawDonut(breakdown) {
   ctx.fillText('POIDS', cx, cy - 6);
   ctx.fillText('ANALYSE', cx, cy + 7);
 }
-
+ 
 // ===== ERROR =====
 function showError(title, msg) {
   document.getElementById('error-title').textContent = title;
@@ -1119,7 +1132,7 @@ function showError(title, msg) {
   overlayError.classList.add('show');
 }
 errorClose.addEventListener('click', () => overlayError.classList.remove('show'));
-
+ 
 // ===== RETRY =====
 btnRetry.addEventListener('click', () => {
   selectedFile = null;
@@ -1131,7 +1144,7 @@ btnRetry.addEventListener('click', () => {
   btnAnalyze.disabled = true;
   showScreen('screen-home');
 });
-
+ 
 // ===== BLOCK ZOOM =====
 document.addEventListener('touchstart', (e) => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
 let lastTap = 0;
@@ -1140,20 +1153,233 @@ document.addEventListener('touchend', (e) => {
   if (now - lastTap < 300) e.preventDefault();
   lastTap = now;
 }, { passive: false });
-
-// ===== SHARE =====
+ 
+// ===== SHARE — popup image =====
 btnShare.addEventListener('click', async () => {
   if (!analysisResult) return;
-  const text = `🎭 DE GAUCHE OU DE DROITE ?\n\n🔴 Gauche: ${analysisResult.gauche}% | Droite: ${analysisResult.droite}% 🔵\n\n📣 "${analysisResult.verdict}"\n\nTeste toi aussi ! #DeGaucheOuDeDroite`;
-
-  if (navigator.share) {
-    try { await navigator.share({ title: 'De Gauche ou de Droite?', text }); }
-    catch {}
-  } else {
-    await navigator.clipboard.writeText(text).catch(() => {});
-    showError('Copié ! 📋', 'Le résultat a été copié dans le presse-papier.');
+  btnShare.textContent = '⏳ Génération...';
+  btnShare.disabled = true;
+  try {
+    const dataUrl = await generateShareDataUrl(analysisResult, previewImg.src);
+    showImagePopup(dataUrl);
+  } catch(e) {
+    showError('Erreur', 'Impossible de générer l\'image : ' + e.message);
+  } finally {
+    btnShare.textContent = '📤 Partager';
+    btnShare.disabled = false;
   }
 });
+ 
+function showImagePopup(dataUrl) {
+  const overlay = document.createElement('div');
+  overlay.style.cssText = `position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;gap:14px;`;
+  overlay.addEventListener('click', (e) => { if(e.target===overlay) document.body.removeChild(overlay); });
+ 
+  const title = document.createElement('div');
+  title.style.cssText = `font-family:'Barlow Condensed';font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.5);text-align:center;`;
+  title.textContent = '📸 Appuie longuement pour sauvegarder';
+ 
+  const img = document.createElement('img');
+  img.src = dataUrl;
+  img.style.cssText = `max-width:100%;max-height:72vh;border-radius:16px;display:block;box-shadow:0 20px 60px rgba(0,0,0,0.8);`;
+ 
+  const closeBtn = document.createElement('button');
+  closeBtn.textContent = '✕ Fermer';
+  closeBtn.style.cssText = `background:transparent;border:1.5px solid rgba(255,255,255,0.2);border-radius:14px;color:rgba(255,255,255,0.6);font-family:'Barlow Condensed';font-size:16px;font-weight:700;padding:12px 32px;cursor:pointer;letter-spacing:1px;`;
+  closeBtn.addEventListener('click', () => document.body.removeChild(overlay));
+ 
+  overlay.appendChild(title);
+  overlay.appendChild(img);
+  overlay.appendChild(closeBtn);
+  document.body.appendChild(overlay);
+}
+ 
+async function generateShareDataUrl(r, photoSrc) {
+  const SCALE = 2;
+  const W = 390, H = 844;
+  const c = document.createElement('canvas');
+  c.width = W * SCALE; c.height = H * SCALE;
+  c.style.width = W + 'px'; c.style.height = H + 'px';
+  const ctx = c.getContext('2d');
+  ctx.scale(SCALE, SCALE);
+ 
+  // Load Playfair Display
+  const fontFace = new FontFace('Playfair', 'url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.woff2)');
+  try { await fontFace.load(); document.fonts.add(fontFace); } catch(e) {}
+ 
+  // BACKGROUND
+  const bgGrad = ctx.createRadialGradient(W/2,0,0,W/2,0,H);
+  bgGrad.addColorStop(0,'#1a1a3e'); bgGrad.addColorStop(0.65,'#0a0a0f'); bgGrad.addColorStop(1,'#0a0a0f');
+  ctx.fillStyle = bgGrad; ctx.fillRect(0,0,W,H);
+ 
+  const pad = 16;       // outer margin
+  const gap = 12;       // gap between photo and verdict
+  const sqSize = (W - pad*2 - gap) / 2;  // square side = ~171px each
+  let y = pad;
+ 
+  // ── PHOTO (square, left) ─────────────────────────────────────────────────
+  await drawRoundImage(ctx, photoSrc, pad, y, sqSize, sqSize, 14);
+ 
+  // ── VERDICT (square, right) ──────────────────────────────────────────────
+  const vx = pad + sqSize + gap;
+  const vc = r.gauche>r.droite?'#ff1744':r.droite>r.gauche?'#2979ff':'#ff6d00';
+ 
+  ctx.fillStyle = 'rgba(255,255,255,0.05)';
+  roundRect(ctx, vx, y, sqSize, sqSize, 14); ctx.fill();
+  ctx.strokeStyle = vc; ctx.lineWidth = 1.5;
+  roundRect(ctx, vx, y, sqSize, sqSize, 14); ctx.stroke();
+ 
+  // Split verdict into lines
+  const words = r.verdict.split(' ');
+  const mid = Math.ceil(words.length / 2);
+  const vLine1 = words.slice(0, mid).join(' ');
+  const vLine2 = words.slice(mid).join(' ');
+  const maxVW = sqSize - 20;
+ 
+  let vSize = 28;
+  while (vSize > 13) {
+    ctx.font = "italic bold "+vSize+"px 'Playfair', Georgia, serif";
+    if (Math.max(ctx.measureText(vLine1).width, vLine2 ? ctx.measureText(vLine2).width : 0) <= maxVW) break;
+    vSize--;
+  }
+  ctx.font = "italic bold "+vSize+"px 'Playfair', Georgia, serif";
+  const lineGap = vSize * 1.3;
+  const totalH = vLine2 ? lineGap*2 : vSize;
+  const vTextY = y + (sqSize - totalH) / 2 + vSize;
+ 
+  ctx.fillStyle = vc; ctx.textAlign = 'center';
+  ctx.fillText(vLine1, vx + sqSize/2, vTextY);
+  if (vLine2) ctx.fillText(vLine2, vx + sqSize/2, vTextY + lineGap);
+ 
+  y += sqSize + 14;
+ 
+  // ── SCORES ───────────────────────────────────────────────────────────────
+  ctx.font='bold 44px sans-serif'; ctx.fillStyle='#ff1744'; ctx.textAlign='center';
+  ctx.fillText(r.gauche+'%', W*0.25, y+36);
+  ctx.font='700 10px sans-serif'; ctx.fillStyle='rgba(255,255,255,0.5)';
+  ctx.fillText('🔴 GAUCHE', W*0.25, y+50);
+  ctx.font='bold 44px sans-serif'; ctx.fillStyle='#2979ff';
+  ctx.fillText(r.droite+'%', W*0.75, y+36);
+  ctx.font='700 10px sans-serif'; ctx.fillStyle='rgba(255,255,255,0.5)';
+  ctx.fillText('DROITE 🔵', W*0.75, y+50);
+  ctx.font='bold 12px sans-serif'; ctx.fillStyle='rgba(255,255,255,0.2)';
+  ctx.fillText('VS', W/2, y+26);
+  y += 62;
+ 
+  // ── SPECTRUM BAR ─────────────────────────────────────────────────────────
+  const bX=pad, bW=W-pad*2, bH=8, bY=y+4;
+  ctx.save(); ctx.beginPath(); roundRect(ctx,bX,bY,bW,bH,4); ctx.clip();
+  const sg=ctx.createLinearGradient(bX,0,bX+bW,0);
+  sg.addColorStop(0,'#ff1744'); sg.addColorStop(0.5,'#aa1aff'); sg.addColorStop(1,'#2979ff');
+  ctx.fillStyle=sg; ctx.fillRect(bX,bY,bW,bH); ctx.restore();
+  const dotX=bX+(r.droite/100)*bW;
+  ctx.beginPath(); ctx.arc(dotX,bY+bH/2,8,0,Math.PI*2);
+  ctx.fillStyle='white'; ctx.fill();
+  ctx.strokeStyle='#ff6d00'; ctx.lineWidth=2.5; ctx.stroke();
+  y += 24;
+ 
+  // SEP + LABEL
+  ctx.fillStyle='rgba(255,255,255,0.08)'; ctx.fillRect(pad,y,W-pad*2,1); y+=9;
+  ctx.font='700 9px sans-serif'; ctx.fillStyle='rgba(255,255,255,0.28)'; ctx.textAlign='left';
+  ctx.fillText('📊  DÉTAIL PAR CATÉGORIE', pad, y+7); y+=15;
+ 
+  // ── CARDS — fill remaining ────────────────────────────────────────────────
+  const breakdown = r.breakdown || [];
+  const remaining = H - y - 6;
+  const cGap = 4;
+  const cH = Math.floor((remaining - (breakdown.length-1)*cGap) / breakdown.length);
+  const barColW = 62, barColX = W-pad-barColW-8;
+  const noteMaxW = barColX - pad - 12;
+ 
+  for (const item of breakdown) {
+    const ac = item.gauche>item.droite ? '#ff1744' : '#2979ff';
+    ctx.fillStyle='rgba(255,255,255,0.042)'; roundRect(ctx,pad,y,W-pad*2,cH,8); ctx.fill();
+    ctx.fillStyle=ac; roundRect(ctx,pad,y,3,cH,2); ctx.fill();
+ 
+    const nameY = y + Math.round(cH*0.30);
+    ctx.font='bold 11px sans-serif'; ctx.fillStyle='rgba(255,255,255,0.92)'; ctx.textAlign='left';
+    ctx.fillText(item.icon+'  '+item.cat.toUpperCase(), pad+10, nameY);
+ 
+    const noteLines = wrapLines(ctx, item.note||'', noteMaxW);
+    ctx.font='400 8.5px sans-serif'; ctx.fillStyle='rgba(255,255,255,0.48)';
+    ctx.fillText(noteLines[0]||'', pad+10, nameY+12);
+    if (noteLines[1]) ctx.fillText(noteLines[1], pad+10, nameY+22);
+ 
+    const mbH=4, mbY=nameY-9;
+    ctx.fillStyle='rgba(255,255,255,0.08)'; roundRect(ctx,barColX,mbY,barColW,mbH,2); ctx.fill();
+    ctx.fillStyle=ac;
+    roundRect(ctx,barColX,mbY,barColW*(Math.max(item.gauche,item.droite)/100),mbH,2); ctx.fill();
+ 
+    y += cH+cGap;
+  }
+ 
+  return c.toDataURL('image/png');
+}
+ 
+function wrapLines(ctx, text, maxW) {
+  if (!text) return [''];
+  const words = text.split(' ');
+  const lines = [];
+  let line = '';
+  for (const w of words) {
+    const test = line ? line+' '+w : w;
+    if (ctx.measureText(test).width > maxW && line) {
+      lines.push(line);
+      if (lines.length === 2) return lines;
+      line = w;
+    } else { line = test; }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+ 
+function sTrunc(ctx, text, maxW) {
+  if (!text) return '';
+  if (ctx.measureText(text).width <= maxW) return text;
+  let t = text;
+  while (t.length > 1 && ctx.measureText(t+'…').width > maxW) t = t.slice(0,-1);
+  return t+'…';
+}
+ 
+ 
+// helpers
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x+r, y);
+  ctx.lineTo(x+w-r, y);
+  ctx.quadraticCurveTo(x+w, y, x+w, y+r);
+  ctx.lineTo(x+w, y+h-r);
+  ctx.quadraticCurveTo(x+w, y+h, x+w-r, y+h);
+  ctx.lineTo(x+r, y+h);
+  ctx.quadraticCurveTo(x, y+h, x, y+h-r);
+  ctx.lineTo(x, y+r);
+  ctx.quadraticCurveTo(x, y, x+r, y);
+  ctx.closePath();
+}
+ 
+function drawRoundImage(ctx, src, x, y, w, h, r) {
+  return new Promise(res => {
+    const img = new Image();
+    // no crossOrigin for local blobs
+    img.onload = () => {
+      ctx.save();
+      roundRect(ctx, x, y, w, h, r);
+      ctx.clip();
+      // cover fit
+      const scale = Math.max(w/img.width, h/img.height);
+      const sw = img.width*scale, sh = img.height*scale;
+      ctx.drawImage(img, x-(sw-w)/2, y-(sh-h)/2, sw, sh);
+      ctx.restore();
+      ctx.strokeStyle = 'rgba(255,109,0,0.7)';
+      ctx.lineWidth = 2.5;
+      roundRect(ctx, x, y, w, h, r);
+      ctx.stroke();
+      res();
+    };
+    img.onerror = () => res(); // skip photo on error, don't block
+    img.src = src;
+  });
+}
 </script>
 </body>
 </html>
